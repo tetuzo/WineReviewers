@@ -9,6 +9,22 @@
   </head>
 
   <body>
+    <div class="header">
+      <div class="nav">
+        <a class="nav-logo" href="/">Wine::reviewer</a>
+      </div>
+      <div class="nav-items">
+       <% if user_signed_in? %>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "header__right--btn" %>
+        <% else %>
+          <%= link_to "LogIn", new_user_session_path, class: "header__right--btn" %>
+          <%= link_to "SignUp", new_user_registration_path, class: "header__right--btn" %>
+        <% end %>
+        <a class="nav-button" href="#">Mypage</a>
+        <a class="nav-button" href="#">Search</a>
+        <a class="nav-button" href="#">Link</a>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

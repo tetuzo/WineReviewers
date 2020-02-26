@@ -61,7 +61,7 @@ body {
   width: 100%;
 }
 
-.review {
+.content-list {
   height: 500px;
   width: 100%;
   position: relative;
@@ -95,3 +95,7 @@ a:hover {
   color: rgb(0, 119, 255);
 }
 
+.header__right--btn {
+  color: white;
+  font-size: 25px;
+}
