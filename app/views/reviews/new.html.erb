@@ -1,0 +1,25 @@
+<div class="container">
+  <%= form_with(model: @review, local: true) do |form| %>
+  <div class="review-input">
+    <%= form.text_area :text, class: 'review-form',placeholder: "Review" , rows: "10" %>  
+  </div>
+  <div class="form-multi">
+    <%= form.text_field :name, class: 'name-form', placeholder: "Name" %>
+    <%= form.search_field :category, class: 'category-form', autocomplete: "on", list: "list", placeholder: "category" %>
+      <datalist id="list">
+        <option value="赤">
+        <option value="白">
+        <option value="ロゼ">
+        <option value="スパークリング">
+        <option value="デザート">
+      </datalist>
+    <div class="form_mask">
+      <%= form.label :image, class: 'form-mask__image' do %>
+        <i class="fas fa-wine-bottle"></i>
+        <%= form.file_field :image, class: 'image-form' %>
+      <% end %>
+    </div>
+    <%= form.submit "SEND", class: 'submit-btn'%>
+  </div>
+  <% end %>
+</div>

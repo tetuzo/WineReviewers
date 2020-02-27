@@ -17,3 +17,59 @@ h2 {
   margin-top: 50px;
   float: left;
 }
+
+.content {
+  height: 20vh;
+  width: 30%;
+}
+
+.contents-post {
+  padding-top: 5vh;
+  padding-left: 5%;
+  height: 100vh;
+  width: 100%;
+}
+
+.contents-logo {
+  background-color: gray;
+  width: 50%;
+  color: white;
+  margin: 5% 20%;
+  font-size: 50px;
+  text-align: center;
+  border: black 2px solid;
+  border-radius:10px;
+}
+
+.content-index {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content__box {
+  border: 10px groove;
+  margin: 5px;
+  height: 50vh;
+  width: 30%;
+  position: relative;
+  border-radius:10px;
+}
+
+.content__box-text {
+  height: 100%;
+  width: 45%;
+  flex-wrap: wrap;
+
+}
+.name {
+  padding-left: 5px;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-bottom: 2px solid blue;
+}
+.content__box-image {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border: 1px solid;
+}
