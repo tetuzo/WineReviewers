@@ -20,7 +20,9 @@
           <%= link_to "LogIn", new_user_session_path, class: "header__right--btn" %>
           <%= link_to "SignUp", new_user_registration_path, class: "header__right--btn" %>
         <% end %>
-        <a class="nav-button" href="#">Mypage</a>
+        <% if user_signed_in? %>
+        <a class="nav-button" href="/users/<%= current_user.id %>">Mypage</a>
+        <% end%>
         <a class="nav-button" href="#">Search</a>
         <a class="nav-button" href="#">Link</a>
       </div>
