@@ -1,3 +1,6 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
 .container {
   background-image: url('★IMG_8169.jpg');
   background-size: contain;
@@ -20,7 +23,7 @@
 
 .form-multi {
   position: relative;
-  padding-top: 50px;
+  padding-top: 20vh;
   float: left;
   height: 100%;
   width: 50%;
@@ -39,7 +42,7 @@
 
 .form_mask {
   position: absolute;
-  top: 7vh;
+  top: 20vh;
   left: 55%;
 }
 
@@ -49,7 +52,7 @@
 
 .category-form {
   position: absolute;
-  top: 20vh;
+  bottom: 15vh;
   left: 0;
 }
 
@@ -62,3 +65,9 @@
   background-color: rgb(255, 208, 0);
   border-radius:25px;
 }
+
+.form-group row {
+  position: absolute;
+  top: 20vh;
+}
+

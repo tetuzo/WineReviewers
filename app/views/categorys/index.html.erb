@@ -1,0 +1,35 @@
+<div class="wine_category_up">
+  <div class="red">
+  <div class="wine_logo">赤</div>
+    <%= link_to "/reviews/show/", controller: "reviews", action: "show", a: 1 do %>
+      <%= image_tag "mywine_y-7772276.jpeg", class: "wine_image" %>
+    <% end %>
+  </div>
+  <div class="white">
+  <div class="wine_logo">白</div>
+    <%= link_to "/reviews/show/", controller: "reviews", action: "show", a: "2" do %>
+      <%= image_tag "img56678590.jpg", class: "wine_image" %>
+    <% end %>
+  </div>
+  <div class="roze">
+  <div class="wine_logo">ロゼ</div>
+   <%= link_to "/reviews/show/", controller: "reviews", action: "show", a: "3" do %>
+      <%= image_tag "Sancerre_rose_Wine.jpg", class: "wine_image" %>
+    <% end %>
+    </div>
+</div>
+<div class="wine_category_down">
+  <div class="spark">
+  <div class="wine_logo">スパークリング</div>
+    <%= link_to "/reviews/show/", controller: "reviews", action: "show", a: "4" do %>
+      <%= image_tag "719471_615.jpg", class: "wine_image" %>
+    <% end %>
+  </div>
+  <div class="desert">
+  <div class="wine_logo">デザート</div>
+    <%= link_to "/reviews/show/", controller: "reviews", action: "show", a: "5" do %>
+      <%= image_tag "cee0164bd39252b82ffc29cab59f2001fd1ac655.jpg", class: "wine_image" %>
+    <% end %>
+  </div>
+</div>
+
