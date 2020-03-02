@@ -1,0 +1,36 @@
+<div class="contents-post">
+  <div class="content-index">
+    <% if @reviews %>
+      <% @reviews.each do |review| %>
+        <div class="content__box" >
+          <div class="content__box-text">
+            <div class="name"><%= review. name %></div>
+            <strong><%= review.user.nickname %>さんのレビュー</strong>
+            <div class="point">評価：<%= review.rate %>点</div>
+            <div id="star-rate-<%= review.id %>"></div>
+            <script>
+            $('#star-rate-<%= review.id %>').raty({
+              size: 36,
+              starOff:  '<%= asset_path('star-off.png') %>',
+              starOn : '<%= asset_path('star-on.png') %>',
+              starHalf: '<%= asset_path('star-half.png') %>',
+              half: true,
+              readOnly: true,
+              score: <%= review.rate %>,
+            });
+            </script> 
+            <%= simple_format(review.text) %>
+          </div>
+          <div class="content__box-image">
+            <% if review.image? %>
+              <%= image_tag review.image.url %>
+            <% else %>
+              <%= image_tag "unnamed.jpg", :size =>'200x200'%>
+            <% end %>
+          </div>
+          </div>  
+        <% end %>
+    <% end %>
+  </div>
+</div>
+

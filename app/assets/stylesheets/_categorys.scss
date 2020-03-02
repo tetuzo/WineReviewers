@@ -1,0 +1,109 @@
+.wine_category_up {
+  margin: 10% 10% 0;
+  display: flex;
+  width: 80%;
+  height: 50vh;
+}
+
+.wine_category_down {
+  margin: 0 10% 10%;
+  display: flex;
+  width: 80%;
+  height: 50vh;
+}
+
+.red {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  box-shadow: 0 10px 10px #666666;
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.red:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.white {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  box-shadow: 0 10px 10px #666666;
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.white:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.roze {
+  position: relative;
+  width: 34%;
+  height: 100%;
+  box-shadow: 0 10px 10px #666666;
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.roze:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.spark {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  margin-left: 16%;
+  box-shadow: 0 10px 10px #666666;
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.spark:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.wine_image {
+  height: 100%;
+  width: 100%;
+}
+  
+.desert {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  margin-right: 17%;
+  box-shadow: 0 10px 10px #666666;
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.desert:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.wine_logo {
+  color: rgb(231, 110, 110);
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  font-size: 50px;
+  z-index: 1;
+}
