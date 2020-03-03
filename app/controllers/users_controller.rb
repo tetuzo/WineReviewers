@@ -5,4 +5,6 @@ class UsersController < ApplicationController
     @nickname = current_user.nickname
     @reviews = current_user.reviews
   end
+
+ 
 end

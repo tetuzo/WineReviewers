@@ -5,33 +5,35 @@
   <div class="content-index">
     <% @reviews.each do |review| %>
       <div class="content__box" >
-        <div class="content__box-text">
-          <div class="name"><%= review.name %></div>
-            <%= review.category %>
-          <div class="point">評価：<%= review.rate %>点</div>
-          <div id="star-rate-<%= review.id %>"></div>
-          <script>
-          $('#star-rate-<%= review.id %>').raty({
-            size: 36,
-            starOff:  '<%= asset_path('star-off.png') %>',
-            starOn : '<%= asset_path('star-on.png') %>',
-            starHalf: '<%= asset_path('star-half.png') %>',
-            half: true,
-            readOnly: true,
-            score: <%= review.rate %>,
-          });
-          </script> 
-          <div class="box-text">
-            <%= simple_format(review.text) %>
-        </div> 
-      </div>
-        <div class="content__box-image">
-        <% if review.image? %>
-          <%= image_tag review.image.url %>
-        <% else %>
-          <%= image_tag "unnamed.jpg", :size =>'200x200'%>
-        <% end %>
+          <div class="content__box-text">
+            <div class="name"><%= review.name %></div>
+              <%= review.category %>
+            <div class="point">評価：<%= review.rate %>点</div>
+            <div id="star-rate-<%= review.id %>"></div>
+            <script>
+            $('#star-rate-<%= review.id %>').raty({
+              size: 36,
+              starOff:  '<%= asset_path('star-off.png') %>',
+              starOn : '<%= asset_path('star-on.png') %>',
+              starHalf: '<%= asset_path('star-half.png') %>',
+              half: true,
+              readOnly: true,
+              score: <%= review.rate %>,
+            });
+            </script> 
+            <div class="box-text">
+              <%= simple_format(review.text) %>
+          </div>
+          <div class="d-btn"><%= link_to '削除', "/reviews/#{review.id}", method: :delete %></div>
         </div>
+        <div class="content__box-image">
+          <% if review.image? %>
+            <%= image_tag review.image.url %>
+          <% else %>
+            <%= image_tag "unnamed.jpg", :size =>'200x200'%>
+          <% end %>
+        </div>
+        
       </div>
     <% end %>
   </div>

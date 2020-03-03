@@ -4,8 +4,10 @@
       <% @reviews.each do |review| %>
         <div class="content__box" >
           <div class="content__box-text">
-            <div class="name"><%= review. name %></div>
+            <div class="name"><%= review.name %></div>
+            <%= link_to  do %>
             <strong><%= review.user.nickname %>さんのレビュー</strong>
+            <% end %>
             <div class="point">評価：<%= review.rate %>点</div>
             <div id="star-rate-<%= review.id %>"></div>
             <script>
