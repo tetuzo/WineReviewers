@@ -1,5 +1,9 @@
 class ReviewsController < ApplicationController
 
+
+  def index
+  end
+
   def show
   a = 1
   case a
@@ -28,7 +32,11 @@ class ReviewsController < ApplicationController
     redirect_to root_path
   end
 
-  
+  def destroy
+    review = Review.find(params[:id])
+    review.destroy
+    redirect_to "/users/#{current_user.id}"
+  end
 
   private
   def review_params
