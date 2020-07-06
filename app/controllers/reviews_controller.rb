@@ -5,22 +5,7 @@ class ReviewsController < ApplicationController
   end
 
   def show
-  a = 1
-  case a
-  when 1 then
-    @reviews = Review.where(category: '赤')
-  when 2 then
-    @reviews = Review.where(category: '白')
-  when 3 then
-    @reviews = Review.where(category: 'ロゼ')
-  when 4 then
-    @reviews = Review.where(category: 'スパークリング')
-  when 5 then
-    @reviews = Review.where(category: 'デザート')
-    
-  end
-
-      
+    @reviews = Review.where('category_id IN(?)', params[:category_id])
   end
 
   def new
