@@ -4,6 +4,7 @@ class UsersController < ApplicationController
     user = User.find(params[:id])
     @nickname = current_user.nickname
     @reviews = current_user.reviews
+    
   end
 
  
