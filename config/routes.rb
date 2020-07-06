@@ -4,5 +4,4 @@ Rails.application.routes.draw do
   resources :users, only: :show
   resources :posts, only: :index
   resources :reviews, only: [:index, :show, :new, :create, :destroy]
-  resources :categorys, only: :index
 end

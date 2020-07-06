@@ -6,15 +6,6 @@
   <div class="form-multi">
     <%= form.text_field :name, class: 'name-form', placeholder: "Name" %>
     <%= form.collection_select :category_id, Category.all, :id, :name %>
-
-    <%# <%= form.search_field :category, class: 'category-form', autocomplete: "on", list: "list", placeholder: "category" %>
-      <%# <datalist id="list">
-        <option value="赤">
-        <option value="白">
-        <option value="ロゼ">
-        <option value="スパークリング">
-        <option value="デザート">
-      </datalist> %>
     <div class="form_mask">
       <%= form.label :image, class: 'form-mask__image' do %>
         <i class="fas fa-wine-bottle"></i>

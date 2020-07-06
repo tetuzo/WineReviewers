@@ -5,7 +5,7 @@ class ReviewsController < ApplicationController
   end
 
   def show
-    @reviews = Review.where('category_id IN(?)', params[:category_id])
+    @reviews = Review.where(reviews_url = (params[:category_id]))
   end
 
   def new
@@ -25,6 +25,6 @@ class ReviewsController < ApplicationController
 
   private
   def review_params
-    params.require(:review).permit(:name, :text, :category, :image, :rate).merge(user_id: current_user.id)
+    params.require(:review).permit(:name, :text, :category_id, :image, :rate).merge(user_id: current_user.id)
   end
 end
