@@ -7,7 +7,7 @@
       <div class="content__box" >
           <div class="content__box-text">
             <div class="name"><%= review.name %></div>
-              <%= review.category_id %>
+              <%= review.category.name %>
             <div class="point">評価：<%= review.rate %>点</div>
             <div id="star-rate-<%= review.id %>"></div>
             <script>
