@@ -1,19 +1,19 @@
 <div class="wine_category_up">
   <div class="red">
   <div class="wine_logo">赤</div>
-    <%= link_to "/reviews/1", controller: "reviews", action: "show", a: 1 do %>
+    <%= link_to review_path(id: 1, category_id: 1), controller: "reviews", action: "show" do %>
       <%= image_tag "mywine_y-7772276.jpeg", class: "wine_image" %>
     <% end %>
   </div>
   <div class="white">
   <div class="wine_logo">白</div>
-    <%= link_to "/reviews/2", controller: "reviews", action: "show", a: "2" do %>
+    <%= link_to review_path(id: 2, category_id: 2), controller: "reviews", action: "show" do %>
       <%= image_tag "img56678590.jpg", class: "wine_image" %>
     <% end %>
   </div>
   <div class="roze">
   <div class="wine_logo">ロゼ</div>
-   <%= link_to "/reviews/3/", controller: "reviews", action: "show", a: "3" do %>
+   <%= link_to review_path(id: 3, category_id: 3), controller: "reviews", action: "show" do %>
       <%= image_tag "Sancerre_rose_Wine.jpg", class: "wine_image" %>
     <% end %>
     </div>
@@ -21,13 +21,13 @@
 <div class="wine_category_down">
   <div class="spark">
   <div class="wine_logo">スパークリング</div>
-    <%= link_to "/reviews/4", controller: "reviews", action: "show", a: "4" do %>
+    <%= link_to review_path(id: 4, category_id: 4), controller: "reviews", action: "show" do %>
       <%= image_tag "719471_615.jpg", class: "wine_image" %>
     <% end %>
   </div>
   <div class="desert">
   <div class="wine_logo">デザート</div>
-    <%= link_to "/reviews/5", controller: "reviews", action: "show", a: "5" do %>
+    <%= link_to review_path(id: 5, category_id: 5), controller: "reviews", action: "show" do %>
       <%= image_tag "cee0164bd39252b82ffc29cab59f2001fd1ac655.jpg", class: "wine_image" %>
     <% end %>
   </div>

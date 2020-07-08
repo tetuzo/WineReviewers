@@ -5,7 +5,20 @@ class ReviewsController < ApplicationController
   end
 
   def show
-    @reviews = Review.where(reviews_url = (params[:category_id]))
+  
+    a = params[:category_id]
+    case a
+    when "1"
+      @reviews = Review.where(category_id: 1)
+    when "2"
+      @reviews = Review.where(category_id: 2)
+    when "3"
+      @reviews = Review.where(category_id: 3)
+    when "4"
+      @reviews = Review.where(category_id: 4)
+    when "5"
+      @reviews = Review.where(category_id: 5)
+    end
   end
 
   def new
