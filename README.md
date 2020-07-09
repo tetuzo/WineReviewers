@@ -12,24 +12,24 @@ Create and share wine reviews.Browse reviews by wine type.
 
 # Features
 
-1.Complete user registration.
-2.Post a wine review by name, type, rating and text.
-3.You can see posted reviews by type.
-4.You can search wine reviews by keyword
+1.Complete user registration.<br>
+2.Post a wine review by name, type, rating and text.<br>
+3.You can see posted reviews by type.<br>
+4.You can search wine reviews by keyword<br>
 
 # Requirement
 
-ruby 2.5.1
+ruby 2.5.1<br>
 mysql
 
 # Usage
 
-https://github.com/tetuzo/WineReviewers.git
-$ cd WineReviewers
-$ bundle install
-$ rails db:create
-$ rails db:migrate
-$ rails s
+https://github.com/tetuzo/WineReviewers.git<br>
+$ cd WineReviewers<br>
+$ bundle install<br>
+$ rails db:create<br>
+$ rails db:migrate<br>
+$ rails s<br>
 👉 http://localhost:3000
 
 # Author
