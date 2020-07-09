@@ -1,24 +1,41 @@
 # README
+# Name
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+WineReviewers
 
-Things you may want to cover:
+Create and share wine reviews.Browse reviews by wine type.
 
-* Ruby version
+# DEMO
 
-* System dependencies
+![Uploading 9d2b4d3ed89a8f61825dae271a8f65b9.jpg…]()
 
-* Configuration
+# Features
 
-* Database creation
+1.Complete user registration.
+2.Post a wine review by name, type, rating and text.
+3.You can see posted reviews by type.
+4.You can search wine reviews by keyword
 
-* Database initialization
+# Requirement
 
-* How to run the test suite
+ruby 2.5.1
+mysql
 
-* Services (job queues, cache servers, search engines, etc.)
+# Usage
 
-* Deployment instructions
+https://github.com/tetuzo/WineReviewers.git
+$ cd WineReviewers
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails s
+👉 http://localhost:3000
 
-* ...
+# Author
+
+* Tetsuya Morikita
+* s611320@hotmail.co.jp
+
+# License
+
+MIT
