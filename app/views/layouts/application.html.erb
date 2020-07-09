@@ -11,8 +11,14 @@
   <body>
     <div class="header">
       <div class="nav">
-        <a class="nav-logo" href="/">Wine::reviewer</a>
+        <%= link_to "Wine::Reviewers", root_path, class: "nav-logo" %>
       </div>
+      <% if user_signed_in? %>
+        <%= form_with url: searches_path, local: true, method: :get, class: "search-review" do |f| %>
+          <%= f.text_field :search, placeholder: "ワイン名で探す" %>
+          <%= f.submit 'Search' %>
+        <% end %>
+      <% end %>
       <div class="nav-items">
        <% if user_signed_in? %>
           <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "header__right--btn" %>
@@ -21,10 +27,9 @@
           <%= link_to "SignUp", new_user_registration_path, class: "header__right--btn" %>
         <% end %>
         <% if user_signed_in? %>
-        <a class="nav-button" href="/users/<%= current_user.id %>">Mypage</a>
+          <%= link_to "Mypage", user_path(current_user.id), class: "nav-button" %>
+          
         <% end%>
-        <a class="nav-button" href="#">Search</a>
-        <a class="nav-button" href="#">Link</a>
       </div>
     </div>
     <%= yield %>
