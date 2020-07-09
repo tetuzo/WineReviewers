@@ -7,7 +7,8 @@ Create and share wine reviews.Browse reviews by wine type.
 
 # DEMO
 
-![Uploading 9d2b4d3ed89a8f61825dae271a8f65b9.jpg…]()
+![gif WineReviewer](https://user-images.githubusercontent.com/60342618/87019899-22f47c00-c20e-11ea-9166-55a11f6ca449.gif)
+
 
 # Features
 
