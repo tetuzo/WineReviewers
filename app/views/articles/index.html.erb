@@ -1,0 +1,12 @@
+<div class="article_box">
+  <% @elements.each do|element| %>
+      <div class="article_content">
+        <%=link_to(element.inner_text, element[:href])%>
+      </div>
+  <%end%>
+  <% @images.each do |image|%>
+      <div class="article_image-box">
+        <%=image_tag image.get_attribute('src'), class: "article_image"%>
+      </div>
+  <% end %>
+</div>
